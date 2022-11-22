@@ -8,9 +8,9 @@ public class Main {
             //phone = "7" + phone;
 
         } else if (phone.length() > 11) {
-            throw new RuntimeException("телефон длинный");
+            throw new RuntimeException("телефон слишком длинный");
         } else if (phone.length() < 10) {
-           throw new RuntimeException("телефон короткий");
+           throw new RuntimeException("телефон слишком короткий");
         } else if (phone.length() == 11 && phone.charAt(0) != '7') {
             throw new RuntimeException("номер не на 7");
             
